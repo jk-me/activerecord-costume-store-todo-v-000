@@ -8,7 +8,7 @@
 # In this change method, create columns with the correct names and
 # value types according to the spec
 
-class CreateCostumes < ActiveRecord::Migration[4.2]
+class CreateCostumes < ActiveRecord::Migration
   def change
     create_table :costumes do |x|
       x.string :name
@@ -16,5 +16,6 @@ class CreateCostumes < ActiveRecord::Migration[4.2]
       x.string :size
       x.string :image_url
       x.timestamps
+    end
 
 end
